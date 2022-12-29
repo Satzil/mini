@@ -8,11 +8,10 @@
 </script>
 
 <header>
-<h1>🔫💬</h1>
   {#if $username}
     <div class="user-bio">
       
-      <span>Hello <strong>{$username}</strong></span>
+      <span><strong>{$username}</strong></span>
       <img src={`https://avatars.dicebear.com/api/initials/${$username}.svg`} alt="avatar" /> 
     </div>
 
@@ -20,6 +19,6 @@
 
     {:else}
 
-      <h3>Gun.js Chat</h3>
+      <h1>Decentralized Chat App </h1>
   {/if}
 </header>

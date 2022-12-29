@@ -87,21 +87,21 @@
     </main>
 
     <form on:submit|preventDefault={sendMessage}>
-      <input type="text" placeholder="Type a message..." bind:value={newMessage} maxlength="100" />
+      <input type="text" placeholder="Send a message..." bind:value={newMessage} maxlength="100" />
 
-      <button type="submit" disabled={!newMessage}>💥</button>
+      <button type="submit" class = "msgbtn" disabled={!newMessage}>∧</button>
     </form>
 
 
     {#if !canAutoScroll}
     <div class="scroll-button">
-      <button on:click={autoScroll} class:red={unreadMessages}>
+      <!-- <button on:click={autoScroll} class:red={unreadMessages}>
         {#if unreadMessages}
           💬
         {/if}
 
         👇
-      </button>
+      </button> -->
     </div>
    {/if}
   {:else}
